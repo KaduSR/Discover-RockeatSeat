@@ -11,7 +11,7 @@ body {
 
 #container {
   width: 360px;
-  margin:56px auto 0px;
+  margin: 56px auto 0px;
   display: block;
 }
 
@@ -37,4 +37,63 @@ body * {
 #profile p {
   font-weight: 500;
   line-height: 24px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+ul li a {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+
+}
+
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid white;
+}
+
+#social-links {
+  display: flex;
+  gap: 16px;
+  padding: 24px 0;
+  gap: 16px;
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+#social-links a {
+  display: flex;
+
+  padding: 16px;
+  text-decoration: none;
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+
+#social-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+footer {
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
 }
