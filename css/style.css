@@ -51,6 +51,8 @@ body * {
   height: 112px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: 50% 30%;
+  border: 3px solid var(--stroke-color);
 }
 
 #profile p {
@@ -119,6 +121,10 @@ ul li a {
 
 }
 
+ul li a i{
+  margin-right:8px ;
+}
+
 ul li a:hover {
   background: var(--surface-color-hover);
   border: 1px solid var(--text-color)
@@ -145,6 +151,16 @@ ul li a:hover {
 
 #social-links a:hover {
   background: var(--highlight-color);
+}
+/* Cores dos ícones das tecnologias */
+.fa-html5 {
+  color: #E34C26;
+  /* Cor oficial do HTML5 */
+}
+
+.fa-css3 {
+  color: #264de4;
+  /* Cor oficial do CSS3 */
 }
 
 footer {
