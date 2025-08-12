@@ -4,9 +4,33 @@
   box-sizing: border-box;
 }
 
+:root {
+  --text-color: white;
+  --bg-url:url(/assets/bg-mobile.jpg)
+  --strokecolor: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.2);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url:url(/assets/icon-sun.svg);
+
+}
+.light {
+  --text-color: black;
+  --bg-url:url(/assets/bg-mobile-light.jpg);
+  --strokecolor: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.1);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url:url(/assets/icon-moon.svg);
+}
 
 body {
-  background: url(/assets/bg-mobile.jpg) no-repeat top center/cover;
+  background:var(--bg-url) no-repeat top center/cover;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color)
 }
 
 #container {
@@ -29,14 +53,28 @@ body {
   object-fit: cover;
 }
 
-body * {
-  font-family: "Inter", sans-serif;
-  color: white;
-}
-
 #profile p {
   font-weight: 500;
   line-height: 24px;
+}
+
+#switch button {
+  width:32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+}
+
+#switch span{
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--strokecolor);
+  --webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  border-radius: 9999px;
 }
 
 ul {
@@ -53,8 +91,8 @@ ul li a {
   align-items: center;
   justify-content: center;
   padding: 16px 24px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: var(--surface-color);
+  border: 1px solid var(--strokecolor);
   border-radius: 10px;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -65,8 +103,8 @@ ul li a {
 }
 
 ul li a:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid white;
+  background: var(--surface-color-hover);
+  border: 1px solid var(--text-color)
 }
 
 #social-links {
@@ -89,7 +127,7 @@ ul li a:hover {
 }
 
 #social-links a:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--highlight-color);
 }
 
 footer {
