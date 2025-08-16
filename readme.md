@@ -1,6 +1,6 @@
 # Discover RockeatSeat
 
-**[Acesse a demonstração ao vivo](https://kadudev.com/Discover-RockeatSeat/)**
+**[Acesse a demonstração ao vivo](https://discovery-rocketseat.kadudev.com/)**
 
 Um agregador de links simples, desenvolvido durante o curso Discover da [Rocketseat](https://www.rocketseat.com.br/discover).
 
