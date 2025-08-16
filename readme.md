@@ -35,7 +35,7 @@ Feito com ❤️ por **Kadu Ribeiro**
 
 # Discover RockeatSeat
 
-**[Access Live Demo](https://kadusr.github.io/Discover-RockeatSeat/)**
+**[Access Live Demo](https://discovery-rocketseat.kadudev.com/)**
 
 A simple link aggregator, developed during the [Rocketseat](https://www.rocketseat.com.br/discover) Discover course.
 
